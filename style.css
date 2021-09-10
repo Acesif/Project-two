@@ -13,7 +13,7 @@
 }
 body{
     font-family: 'Red Hat Display', sans-serif;
-    background-color: black;
+    background-color: var(--Pale-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,9 +30,12 @@ body{
     padding: 2rem;
 }
 .container h2{
+    margin-top: -1.5rem;
+    text-align: center;
     color: var(--Dark-blue);
 }
 .container p{
+    text-align: center;
     color: var(--Desaturated-blue);
 }
 .container .picture{
@@ -53,9 +56,53 @@ body{
     content: url(./images/icon-music.png);
 }
 .container ul li{
+    color: var(--Dark-blue);
     list-style: none;
     padding-bottom: 1.5rem;
 }
 .container ul li span{
     display: block;
+}
+li:nth-child(3), h4{
+cursor: pointer;
+}
+.container ul li:nth-child(3){
+    color: var(--Bright-blue);
+    text-decoration: underline;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    margin: 0rem 1.5rem;
+}
+ul li:nth-child(2), li:nth-child(3){
+    margin-top: 1.2rem;
+}
+ul li:nth-child(2){
+    margin-left: -0.055rem;
+}
+h4{
+   text-align: center;
+}
+#cta-pay{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+    width: 95%;
+    background-color: var(--Bright-blue);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+#cta-cancel{
+    color: var(--Desaturated-blue);
+}
+@media (min-width: 900px){
+    body{
+        background: url(./images/pattern-background-desktop.png) no-repeat;
+        background-size: contain;
+    }
 }
